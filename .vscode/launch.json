@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "Microsoft cloud sandbox",
+            "server": "https://businesscentral.dynamics.com/",
+            "tenant": "92226e37-ba60-4082-93d0-8a400023c938",
+            "authentication": "AAD",
+            "sandboxName": "SANDBOX",
+            "breakOnError": false,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true
+        }
+    ]
+}
