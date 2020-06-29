@@ -2,7 +2,6 @@ TableExtension 50119 tableextension50119 extends "Extended Text Header"
 {
     fields
     {
-
         //Unsupported feature: Property Modification (InitValue) on ""Sales Quote"(Field 11)".
 
 

@@ -37,11 +37,11 @@ codeunit 50101 SalesPostEvents
         var SalesHeader: Record "Sales Header";
         WhseShip: Boolean;
         WhseReceive: Boolean;
-        CommitIsSuppressed: Boolean;
+        CommitIsSuppressed: Boolean
     )
     begin
+        //Icepts 1.01
         IF (SalesLine."Document Type" = SalesLine."Document Type"::Invoice) AND (SalesLine."Shipment No." <> '') THEN
-            //Icepts 1.01
             SalesLine."Quantity Shipped 2" := SalesLine."Quantity 2";
     end;
 
@@ -80,7 +80,6 @@ codeunit 50101 SalesPostEvents
             ItemJournalLine."Quantity 2" := SalesLine."Qty. to Ship 2";
 
     end;
-
 
     [EventSubscriber(ObjectType::Table, Database::"Item Journal Line", 'OnAfterCopyItemJnlLineFromSalesHeader', '', true, true)]
     local procedure "Item Journal Line_OnAfterCopyItemJnlLineFromSalesHeader"
